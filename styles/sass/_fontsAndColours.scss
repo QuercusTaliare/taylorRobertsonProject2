@@ -1,0 +1,24 @@
+$buttonColour: #4CEEA7;
+$borderColour: #4CEEA7;
+$boxOutlineColour: #FDFA69;
+$backgroundColour: #EFFDF3;
+$neutralColour: #FAFAFA;
+$darkColour: #2C2C2C;
+
+    // font-family: 'Playfair Display', serif;
+
+    // font-family: 'Roboto', sans-serif;
+
+@mixin serifFont($size) {
+    font-family: 'Playfair Display', serif;
+    font-size: $size * 1px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@mixin sansSerifFont() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
