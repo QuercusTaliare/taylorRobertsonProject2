@@ -9,9 +9,9 @@ $darkColour: #2C2C2C;
 
     // font-family: 'Roboto', sans-serif;
 
-@mixin serifFont($size) {
+@mixin serifFont() {
     font-family: 'Playfair Display', serif;
-    font-size: $size * 1px;
+    // font-size: $size * 1px;
     font-weight: bold;
     font-style: italic;
 }

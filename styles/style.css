@@ -251,6 +251,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-style: italic;
 }
 
 img {
@@ -273,9 +276,36 @@ a {
   width: 90%;
 }
 
-header {
+.homeHeader {
   background-image: url("../assets/header-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  position: relative;
+}
+
+.homeHeader .homeHeader__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.homeHeader .homeHeader__title {
+  text-align: center;
+  font-size: 138px;
+}
+
+.homeHeader .homeHeader__imgContainer {
+  width: 40%;
+  position: absolute;
+  bottom: -25%;
+  right: 0;
+  border-top: solid 50px #FDFA69;
+  border-bottom: solid 50px #FDFA69;
+  border-left: solid 50px #FDFA69;
 }
 
 .homeBanner {

@@ -1,7 +1,44 @@
-header {
+.homeHeader {
   background-image: url('../assets/header-image.jpg');
+  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  position: relative;
+
+  .homeHeader__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  // Font Declaration 
+  .homeHeader__title {
+    text-align: center;
+    font-size: 138px;
+  }
+
+  .homeHeader__imgContainer {
+    width: 40%;
+    position: absolute;
+    bottom: -25%;
+    right: 0;
+    border-top: solid 50px $boxOutlineColour;
+    border-bottom: solid 50px $boxOutlineColour;
+    border-left: solid 50px $boxOutlineColour;
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 .homeBanner {
   background-image: url('../assets/banner.jpg');
