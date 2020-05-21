@@ -591,6 +591,35 @@ p {
   margin: 0 0 40px 0;
 }
 
+.homeGallery__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.homeGallery__contentContainer {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeGallery__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.homeGallery__imgContainer {
+  text-align: center;
+  width: 80%;
+}
+
 .blogHeader {
   background-image: url("../assets/blog-header.jpg");
   background-position: center;

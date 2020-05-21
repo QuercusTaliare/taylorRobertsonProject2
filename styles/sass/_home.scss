@@ -246,3 +246,29 @@
   }
 
 }
+
+// -------------------- Gallery Section
+
+.homeGallery {
+
+  &__wrapper {
+    @include wrapper(1400);
+  }
+
+  &__contentContainer {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+
+  &__item {
+    flex: 1 1 auto;
+  }
+
+  &__imgContainer {
+    text-align: center;
+    width: 80%;
+  }
+}
