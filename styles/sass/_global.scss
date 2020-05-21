@@ -32,8 +32,25 @@ a {
     color: black;
 }
 
+p {
+    @include sansSerifFont();
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+}
+
+
+.navListItems {
+    @include serifFont();
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+.navLinks {
+    display: block;
+    padding: 25px;
 }

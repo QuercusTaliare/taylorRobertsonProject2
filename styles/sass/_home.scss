@@ -5,31 +5,57 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .homeHeader__list {
     display: flex;
     justify-content: flex-end;
   }
 
+  .homeHeader__listItems:last-child {
+    padding-right: 60px;
+  }
+
   // Font Declaration 
   .homeHeader__title {
     text-align: center;
     font-size: 138px;
+    z-index: 10;
+    text-transform: uppercase;
+    margin: 0 0 50px 50px;
   }
 
   .homeHeader__imgContainer {
-    width: 40%;
+    width: 482px;
     position: absolute;
-    bottom: -25%;
+    bottom: -140px;
     right: 0;
     border-top: solid 50px $boxOutlineColour;
     border-bottom: solid 50px $boxOutlineColour;
-    border-left: solid 50px $boxOutlineColour;
+    border-left: solid 40px $boxOutlineColour;
   }
 
 
 }
 
+.homeAbout {
+  height: 90vh;
+}
+
+.homeAbout__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeAbout__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 

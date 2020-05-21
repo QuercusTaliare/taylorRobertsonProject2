@@ -254,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-style: italic;
+  text-transform: uppercase;
 }
 
 img {
@@ -270,10 +271,32 @@ a {
   color: black;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+}
+
+.navListItems {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.navLinks {
+  display: block;
+  padding: 25px;
 }
 
 .homeHeader {
@@ -282,6 +305,16 @@ a {
   background-size: cover;
   height: 100vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .homeHeader .homeHeader__list {
@@ -293,19 +326,56 @@ a {
           justify-content: flex-end;
 }
 
+.homeHeader .homeHeader__listItems:last-child {
+  padding-right: 60px;
+}
+
 .homeHeader .homeHeader__title {
   text-align: center;
   font-size: 138px;
+  z-index: 10;
+  text-transform: uppercase;
+  margin: 0 0 50px 50px;
 }
 
 .homeHeader .homeHeader__imgContainer {
-  width: 40%;
+  width: 482px;
   position: absolute;
-  bottom: -25%;
+  bottom: -140px;
   right: 0;
   border-top: solid 50px #FDFA69;
   border-bottom: solid 50px #FDFA69;
-  border-left: solid 50px #FDFA69;
+  border-left: solid 40px #FDFA69;
+}
+
+.homeAbout {
+  height: 90vh;
+}
+
+.homeAbout__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeAbout__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .homeBanner {
