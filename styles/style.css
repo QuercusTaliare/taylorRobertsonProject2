@@ -367,7 +367,7 @@ p {
 }
 
 .homeHeader .homeHeader__imgContainer {
-  width: 482px;
+  width: 40%;
   position: absolute;
   bottom: -140px;
   right: 0;
@@ -381,7 +381,7 @@ p {
 }
 
 .homeAbout {
-  height: 90vh;
+  height: 600px;
 }
 
 .homeAbout .homeAbout__wrapper {
@@ -450,6 +450,7 @@ p {
 
 .homeArticles__text {
   padding: 10px;
+  width: 80%;
 }
 
 .homeArticles__p {
@@ -461,10 +462,33 @@ p {
 }
 
 .homeArticles__item:first-child .homeArticles__imgContainer {
-  height: 100%;
+  width: 85%;
   position: absolute;
   left: 0;
   top: -30px;
+  -webkit-box-shadow: 30px 30px 0 #FDFA69;
+          box-shadow: 30px 30px 0 #FDFA69;
+}
+
+.homeArticles__text--two {
+  text-align: right;
+}
+
+.homeArticles__text--two .homeArticles__p {
+  text-align: left;
+}
+
+.homeArticles__item:last-child {
+  position: relative;
+}
+
+.homeArticles__item:last-child .homeArticles__imgContainer {
+  width: 85%;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  -webkit-box-shadow: -30px 30px 0 #FDFA69;
+          box-shadow: -30px 30px 0 #FDFA69;
 }
 
 .homeBanner {

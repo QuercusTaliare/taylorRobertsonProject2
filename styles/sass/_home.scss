@@ -27,7 +27,7 @@
   }
 
   .homeHeader__imgContainer {
-    width: 482px;
+    width: 40%;
     position: absolute;
     bottom: -140px;
     right: 0;
@@ -48,7 +48,7 @@
 
 
 .homeAbout {
-  height: 90vh;
+  height: 600px;
 
   .homeAbout__wrapper {
     @include wrapper(1000);
@@ -94,24 +94,61 @@
     align-items: center;
   }
 
+
+  // Articles
   &__text {
     padding: 10px;
+    width: 80%;
   }
 
   &__p {
     margin: 20px 0;
   }
 
-  // First Image
+  // 1st Image
   &__item:first-child {
     position: relative;
 
     .homeArticles__imgContainer {
-      height: 100%;
+      // height: 100%;
+      width: 85%;
       position: absolute;
       left: 0;
       top: -30px;
+      box-shadow: 30px 30px 0 $boxOutlineColour;
+      
     }
+  }
+
+  // 1st Article
+  &__text--one {
+    // text-align: left;
+  }
+
+  // 2nd Article 
+  &__text--two {
+    
+    text-align: right;
+    
+    .homeArticles__p {
+      text-align: left;
+    }
+
+  }
+
+  // 2nd Image
+  &__item:last-child {
+    position: relative;
+    
+    .homeArticles__imgContainer {
+      width: 85%;
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+      box-shadow: -30px 30px 0 $boxOutlineColour;
+    }
+  
+  
   }
 
 
