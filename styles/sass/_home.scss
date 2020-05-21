@@ -74,7 +74,7 @@
 
 }
 
-// Articles Section 
+// ------------- Articles Section -------------------
 
 .homeArticles {
   // height: 838px;
@@ -154,24 +154,95 @@
 
 }
 
+// ---------------------  Navigation Section 
 
+.homeMainNav {
 
+  .mainWrapper {
+    @include wrapper(1400);
+  }
 
+  &__list {
 
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
 
+  }
 
+  &__listItems {
+    margin: 0 0 30px 0;
+    flex: 1 0 calc(50% - 5px);
 
+    display: flex;
+  }
 
+  &__listItems:nth-child(odd) {
+    margin: 0 10px 0 0;
+  }
 
+  &__iconContainer {
+    margin: 0 10px 0 0;
+  }
 
+  &__icons {
+    background: $buttonColour;
+    border-radius: 50%;
+    padding: 10px;
+  }
 
+  &__text {
+    // flex-direction: column;
+  }
 
+}
 
+// --------------------- Banner Section 
 .homeBanner {
   background-image: url('../assets/banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+
+}
+
+// --------------------- Featured Section
+.homeFeatured {
+
+  &__wrapper {
+    @include wrapper(1400);
+  }
+
+  &__contentContainer {
+    display: flex;
+    padding: 80px 0 calc(30px + 60px) 0;
+  }
+
+  &__item--img {
+    flex: 1 1 30%;
+  }
+
+  &__imgContainer {
+    width: 80%;
+    box-shadow: 30px 30px 0 $boxOutlineColour;
+  }
+
+  &__item--text {
+    flex: 1 1 70%;
+    height: 328px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__p {
+    margin: 0 0 40px 0;
+  }
 
 }

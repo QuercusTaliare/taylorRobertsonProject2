@@ -491,12 +491,104 @@ p {
           box-shadow: -30px 30px 0 #FDFA69;
 }
 
+.homeMainNav .mainWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.homeMainNav__list {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.homeMainNav__listItems {
+  margin: 0 0 30px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 5px);
+          flex: 1 0 calc(50% - 5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeMainNav__listItems:nth-child(odd) {
+  margin: 0 10px 0 0;
+}
+
+.homeMainNav__iconContainer {
+  margin: 0 10px 0 0;
+}
+
+.homeMainNav__icons {
+  background: #4CEEA7;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .homeBanner {
   background-image: url("../assets/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+}
+
+.homeFeatured__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.homeFeatured__contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0 calc(30px + 60px) 0;
+}
+
+.homeFeatured__item--img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.homeFeatured__imgContainer {
+  width: 80%;
+  -webkit-box-shadow: 30px 30px 0 #FDFA69;
+          box-shadow: 30px 30px 0 #FDFA69;
+}
+
+.homeFeatured__item--text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  height: 328px;
+}
+
+.homeFeatured__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.homeFeatured__p {
+  margin: 0 0 40px 0;
 }
 
 .blogHeader {
