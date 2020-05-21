@@ -18,6 +18,29 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+h1 {
+    font-size: 138px;
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 92px;
+}
+
+h3 {
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h5 {
+
+}
+
 img {
     width: 100%;
     display: block;
@@ -37,11 +60,16 @@ p {
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
+    @include wrapper(1200);
 }
 
+.button {
+    @include serifFont();
+    background: $buttonColour;
+    border: none;
+    padding: 8px;
+    
+}
 
 .navListItems {
     @include serifFont();

@@ -29,83 +29,113 @@
   </header>
 
   <main>
+
     <!-- About  -->
-    <section class="homeAbout">
+    <section class="homeSection homeAbout">
 
-      <div class="wrapper homeAbout__container">
+      <div class="homeAbout__wrapper">
 
-        <div class="homeAbout__text">
-
-          <h3>What is Captured?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis suscipit excepturi laudantium magnam cupiditate, unde eveniet dolorem fugit nobis aliquam iure delectus reprehenderit tempora sit porro reiciendis error consequuntur quam saepe at, ipsa cum vel exercitationem. Tempore a sunt magnam, quisquam maxime nisi quasi distinctio mollitia modi voluptatum reiciendis!</p>
-          <button>
-            <a href="#">Find Out More</a>
-          </button>
-
+        <div class="homeAbout__container">
+          
+          <div class="homeAbout__text">
+            
+            <h3>What is Captured?</h3>
+            <p class="homeAbout__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis suscipit excepturi laudantium magnam cupiditate, unde eveniet dolorem fugit nobis aliquam iure delectus reprehenderit tempora sit porro reiciendis error consequuntur quam saepe at, ipsa cum vel exercitationem. Tempore a sunt magnam, quisquam maxime nisi quasi distinctio mollitia modi voluptatum reiciendis!</p>
+            <button class="button">
+              <a href="#">Find Out More</a>
+            </button>
+            
+          </div>
+          
         </div>
 
       </div>
     </section>
+
     <!-- Articles -->
-    <section>
+    <section class="homeSection homeArticles">
       
-      <img src="./assets/left-image.jpg" alt="sideview of a camera with a large lens on a stand, with a cloudy sky in the background">
-      <div class="mainWrapper">
-        <div>
+      <!-- 1 - Image -->
+      <div class="homeArticles__item homeArticle__item--img">
+        <div class="homeArticles__imgContainer">
+          <img src="./assets/left-image.jpg" alt="sideview of a camera with a large lens on a stand, with a cloudy sky in the background">
+        </div>
+      </div>
+
+      <!-- <div class="homeArticles__wrapper"> -->
+      <!-- 2 - Article -->
+
+      <div class="homeArticles__item homeArticles__item--article">
+        <article class="homeArticles__text">
           <h4>Unlock Your Skills</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro praesentium alias commodi, excepturi consectetur adipisci explicabo id provident impedit nisi debitis molestiae, corporis, aperiam similique et consequatur ut totam veniam sequi sint vel incidunt recusandae!</p>
-          <button>
+          <p class="homeArticles__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro praesentium alias commodi, excepturi consectetur adipisci explicabo id provident impedit nisi debitis molestiae, corporis, aperiam similique et consequatur ut totam veniam sequi sint vel incidunt recusandae!</p>
+          <button class="button">
             <a href="#">Read More</a>
           </button>
-        </div>
-        <div>
+        </article>
+      </div>
+
+      <!-- 3 - Article -->
+      <div class="homeArticles__item homeArticles__item--article">
+        <article class="homeArticles__text">
           <h4>Unlock Your Skills</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro praesentium alias commodi, excepturi consectetur
+          <p class="homeArticles__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro praesentium alias commodi, excepturi consectetur
             adipisci explicabo id provident impedit nisi debitis molestiae, corporis, aperiam similique et consequatur ut totam
             veniam sequi sint vel incidunt recusandae!</p>
-            <button>
-              <a href="#">Read More</a>
-            </button>
+          <button class="button">
+            <a href="#">Read More</a>
+          </button>
+        </article>
+      </div>
+      <!-- </div> -->
+
+      <!-- 4 - Image -->
+      <div class="homeArticles__item homeArticles__item--img">
+        <div class="homeArticles__imgContainer">
+          <img src="./assets/right-image.jpg" alt="hands holding a Canon camera, lens tipped downwards">
         </div>
       </div>
-      <img src="./assets/right-image.jpg" alt="hands holding a Canon camera, lens tipped downwards">
-    </section>
+      
+    </section><!-- Articles Section ends -->
 
     <!-- Navigation -->
-    <section>
+
+    <section class="homeSection homeMainNav">
       <div class="mainWrapper">
         <nav>
           <ul>
             <li>
               <i></i>
-              <h4></h4>
-              <p></p>
+              <h4>Top Picks</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi deleniti ex nemo hic reprehenderit doloribus quaerat quo, laboriosam enim tempora blanditiis officia voluptate. Ducimus.</p>
             </li>
             <li>
               <i></i>
-              <h4></h4>
-              <p></p>
+              <h4>Community</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, eaque placeat quisquam tempora consequuntur id quis, architecto nemo blanditiis accusantium commodi itaque animi aliquid. Possimus.</p>
             </li>
             <li>
               <i></i>
-              <h4></h4>
-              <p></p>
+              <h4>Blog</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, itaque. Quaerat blanditiis iure culpa eveniet fugiat molestiae? Voluptatibus doloremque in repellat voluptates voluptas, impedit quo!</p>
             </li>
             <li>
               <i></i>
-              <h4></h4>
-              <p></p>
+              <h4>Get In Touch</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, provident natus. Reiciendis natus temporibus in delectus praesentium, commodi possimus amet aliquam! Nisi doloremque ipsam facere.</p>
             </li>
           </ul>
         </nav>
       </div>
       </section>
+
     <!-- Banner -->
-    <section class="homeBanner">
+    <section class="homeSection homeBanner">
       <!-- Background Image  -->
     </section>
+
     <!-- Featured  -->
-    <section>
+    <section class="homeSection homeFeatured">
       <div class="mainWrapper">
         <div class="wrapper">
           <div>
@@ -114,8 +144,8 @@
           <div>
             <h2></h2>
             <p></p>
-            <button>
-              <a href=""></a>
+            <button class="button">
+              <a href="">Find Out More</a>
             </button>
           </div>
         </div>
@@ -123,7 +153,7 @@
     </section>
 
     <!-- Images  -->
-    <section>
+    <section class="homeSection homeImages">
       <div class="mainWrapper">
         <img src="./assets/gallery-image-1.jpg" alt="closeup of the backside of a camera on a tripod">
         <img src="./assets/gallery-image-2.jpg" alt="the lens of a camera peering through a leafy vine">

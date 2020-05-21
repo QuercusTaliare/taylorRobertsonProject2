@@ -21,7 +21,6 @@
   // Font Declaration 
   .homeHeader__title {
     text-align: center;
-    font-size: 138px;
     z-index: 10;
     text-transform: uppercase;
     margin: 0 0 50px 50px;
@@ -40,22 +39,87 @@
 
 }
 
+// Section Backgrounds 
+.homeSection:nth-child(odd) {
+  background: $backgroundColour;
+}
+
+// About Section 
+
+
 .homeAbout {
   height: 90vh;
+
+  .homeAbout__wrapper {
+    @include wrapper(1000);
+    height: 100%;
+  }
+
+  .homeAbout__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeAbout__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeAbout__p {
+    margin: 20px 0;
+  }
+
 }
 
-.homeAbout__container {
-  height: 100%;
+// Articles Section 
+
+.homeArticles {
+  // height: 838px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+
+
+  &__item {
+    flex: 1 0 50%;
+    height: 419px;
+    
+    display: flex;
+  }
+
+  &__item--article {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    padding: 10px;
+  }
+
+  &__p {
+    margin: 20px 0;
+  }
+
+  // First Image
+  &__item:first-child {
+    position: relative;
+
+    .homeArticles__imgContainer {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: -30px;
+    }
+  }
+
+
 }
 
-.homeAbout__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
+
+
 
 
 
