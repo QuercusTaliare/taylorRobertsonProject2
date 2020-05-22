@@ -92,6 +92,11 @@ p {
     padding: 25px;
 }
 
+.input {
+    @include sansSerifFont;
+}
+
+
 .footer {
     background: $darkColour;
     color: $neutralColour;

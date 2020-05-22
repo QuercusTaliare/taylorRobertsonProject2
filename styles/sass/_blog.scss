@@ -73,6 +73,10 @@
 
 .blogComments {
 
+  &__wrapper {
+    padding: 0 150px 0 35px;
+  }
+
   &__title {
     padding: 40px 0;
   }
@@ -101,4 +105,59 @@
     line-height: 18px;
     padding: 0 0 10px 0;
   }
+
+
+  .blogForm {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin: 0 0 50px 0;
+
+    &__formWrapper {
+      padding: 0 150px 0 20px;
+    }
+  
+    &__fieldset {
+      border: none;
+      padding: 30px 0;
+    }
+
+    &__item {
+      display: flex;
+    }
+
+    &__subItem {
+      flex: 1 1 50%;
+      width: 100%;
+    }
+
+    &__subItem:last-child {
+      text-align: right;
+    }
+
+    .blogForm__inputName,
+    .blogForm__inputEmail {
+      width: 90%;
+      padding: 10px;
+      border: none;
+      border-bottom: solid 1px $borderColour;
+      background: $backgroundColour;
+    }
+
+    .blogForm__inputName::placeholder,
+    .blogForm__inputEmail::placeholder {
+      opacity: 1;
+    }
+
+    .blogForm__inputArea {
+      border: solid 1px $borderColour;
+      padding: 10px;
+      margin: 0 0 40px 0;
+      resize: none;
+      
+    }
+  
+  }
+
+
 }

@@ -337,6 +337,13 @@ p {
   padding: 25px;
 }
 
+.input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .footer {
   background: #2C2C2C;
   color: #FAFAFA;
@@ -703,6 +710,10 @@ p {
   margin: 50px 0 10px 0;
 }
 
+.blogComments__wrapper {
+  padding: 0 150px 0 35px;
+}
+
 .blogComments__title {
   padding: 40px 0;
 }
@@ -736,6 +747,79 @@ p {
 .blogComments__info {
   line-height: 18px;
   padding: 0 0 10px 0;
+}
+
+.blogComments .blogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 50px 0;
+}
+
+.blogComments .blogForm__formWrapper {
+  padding: 0 150px 0 20px;
+}
+
+.blogComments .blogForm__fieldset {
+  border: none;
+  padding: 30px 0;
+}
+
+.blogComments .blogForm__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogComments .blogForm__subItem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  width: 100%;
+}
+
+.blogComments .blogForm__subItem:last-child {
+  text-align: right;
+}
+
+.blogComments .blogForm .blogForm__inputName,
+.blogComments .blogForm .blogForm__inputEmail {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 1px #4CEEA7;
+  background: #EFFDF3;
+}
+
+.blogComments .blogForm .blogForm__inputName::-webkit-input-placeholder,
+.blogComments .blogForm .blogForm__inputEmail::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.blogComments .blogForm .blogForm__inputName:-ms-input-placeholder,
+.blogComments .blogForm .blogForm__inputEmail:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.blogComments .blogForm .blogForm__inputName::-ms-input-placeholder,
+.blogComments .blogForm .blogForm__inputEmail::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.blogComments .blogForm .blogForm__inputName::placeholder,
+.blogComments .blogForm .blogForm__inputEmail::placeholder {
+  opacity: 1;
+}
+
+.blogComments .blogForm .blogForm__inputArea {
+  border: solid 1px #4CEEA7;
+  padding: 10px;
+  margin: 0 0 40px 0;
+  resize: none;
 }
 
 .contactHeader {

@@ -38,6 +38,7 @@
           </div>
 
           <div class="blogArticle__wrapper">
+
             <article class="blogArticle__text">
               <h3 class="blogArticle__title">Finding Great Locations</h3>
               <p class="blogArticle__info">Monday May 4th, 2019 by Dieula</p>
@@ -49,7 +50,7 @@
         <!-- Comments  -->
         <section class="blogMain__blogComments blogComments">
 
-          <div class="blogArticle__wrapper">
+          <div class="blogComments__wrapper">
 
           
             <h4 class="blogComments__title">Comments:</h4>
@@ -91,23 +92,29 @@
               </div>
 
             </div>
+          
+          </div>
 
-            <form class="blogComments__form">
-              <fieldset>
-                <label for="name">
+          <div class="blogForm__formWrapper">
+            <form class="blogComments__blogForm blogForm">
+
+              <fieldset class="blogForm__item blogForm__fieldset">
+                <label for="name" class="blogForm__subItem">
                   <span class="sr-only">Name</span>
                   <input 
                     type="text" 
-                    id="name" 
+                    id="name"
+                    class="input blogForm__inputName" 
                     name="name" 
                     placeholder="Name"
                   >
                 </label>
-                <label for="email">
+                <label for="email" class="blogForm__subItem">
                   <span class="sr-only">Email</span>
                   <input 
                     type="text" 
-                    id="email" 
+                    id="email"
+                    class="input blogForm__inputEmail"
                     name="email" 
                     placeholder="Email address"
                   >
@@ -115,20 +122,22 @@
               </fieldset>
 
               <textarea 
+                class="input blogForm__item blogForm__inputArea"
                 name="comment" 
                 id="comment" 
                 cols="30" 
                 rows="10"
               >Comment</textarea>
 
-              <button>Post Comment</button>
+              <button class="button blogForm__item">Post Comment</button>
 
             </form>
-
           </div>
+
         </section>
 
       </div>
+      
       <!-- Left Side  -->
       <div class="blogMain__item blogMain__item--left">
         <aside>
@@ -146,8 +155,8 @@
     </div>
   </main>
 
-  <footer>
-    <p></p>
+  <footer class="footer">
+    <p>Copyright &copy; 2018 HackerYou</p>
   </footer>
 </body>
 
