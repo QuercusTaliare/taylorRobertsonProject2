@@ -71,6 +71,11 @@ p {
     
 }
 
+.navList {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .navListItems {
     @include serifFont();
     font-size: 20px;
@@ -78,7 +83,17 @@ p {
     letter-spacing: 1px;
 }
 
+// .navListItems:last-child {
+//     padding-right: 60px;
+// }
+
 .navLinks {
     display: block;
     padding: 25px;
+}
+
+.footer {
+    background: $darkColour;
+    color: $neutralColour;
+    text-align: center;
 }

@@ -1,6 +1,72 @@
+// Header Section 
+
 .blogHeader {
   background-image: url('../assets/blog-header.jpg');
-  background-position: center;
+  background-position: right center;
   background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
+  height: 80vh;
+
+  &__listItems:last-child {
+    padding: 0 250px 0 0;
+  }
+
+  &__title {
+
+  }
+
+
+}
+
+// Main Section 
+
+.blogMain {
+  background: $backgroundColour;
+
+  &__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__item--right {
+    flex: 1 1 calc(70% - 40px);
+    margin: 0 0 0 40px;
+  }
+
+  &__item--left {
+    flex: 1 1 calc(30% - 40px);
+    margin: 0 40px 0 0;
+  }
+}
+
+.blogArticle {
+
+  &__imgContainer {
+    position: relative;
+    top: -200px;
+    right: -30px;
+    box-shadow: -30px 30px 0 $boxOutlineColour;
+    width: calc(100% - 30px);
+  }
+
+  &__wrapper {
+    padding: 0 250px 0 0;
+  }
+
+  &__text {
+    border-left: solid 5px $boxOutlineColour;
+    border-bottom: solid 5px $boxOutlineColour;
+    padding: 30px 0 10px 30px;
+    margin: -200px 0 0 0;
+  }
+
+  &__title {
+    padding: 30px 0 0 0;
+  }
+
+  &__p {
+    margin: 50px 0 10px 0;
+  }
+
+
 }
