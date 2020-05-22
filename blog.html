@@ -25,7 +25,7 @@
 
   </header>
 
-  <main>
+  <main class="blogMain">
     <div class="blogMain__container">
 
       <div class="blogMain__item blogMain__item--right">
@@ -48,60 +48,84 @@
 
         <!-- Comments  -->
         <section class="blogMain__blogComments blogComments">
-          <h4>Comments</h4>
-          <div>
-            <div class="blogComments__imgContainer">
-              <img src="./assets/comment-1.jpg" alt="male wearing baseball cap">
+
+          <div class="blogArticle__wrapper">
+
+          
+            <h4 class="blogComments__title">Comments:</h4>
+
+            <div class="blogComments__comment blogComments__commentOne">
+
+              <div class="blogComments__commentItem">
+                <div class="blogComments__imgContainer">
+                  <img src="./assets/comment-1.jpg" alt="male wearing baseball cap">
+                </div>
+              </div>
+
+              <div class="blogComments__commentItem">
+
+                <div class="blogComments__text">
+                  <p class="blogComments__info">Tuesday October 9th, 2018 by Jeremy</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus maiores enim iste fuga fugit facere assumenda quod pariatur animi repellendus, cupiditate sunt, eum quos dolore sapiente voluptatum deserunt. Illum veniam adipisci doloribus sapiente explicabo voluptatem iusto, soluta commodi eveniet eius.</p>
+                </div>
+
+              </div>
+
             </div>
-            <div class="blogComments__text">
-              <p>Tuesday October 9th, 2018 by Jeremy</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus maiores enim iste fuga fugit facere assumenda quod pariatur animi repellendus, cupiditate sunt, eum quos dolore sapiente voluptatum deserunt. Illum veniam adipisci doloribus sapiente explicabo voluptatem iusto, soluta commodi eveniet eius.</p>
+
+            <div class="blogComments__comment blogComments__commentTwo">
+
+              <div class="blogComments__commentItem">
+                <div class="blogComments__imgContainer">
+                  <img src="./assets/comment-2.jpg" alt="woman with blonde hair, smiling">
+                </div>
+              </div>
+
+              <div class="blogComments__commentItem">
+
+                <div class="blogComments__text">
+                  <p class="blogComments__info">Wednesday October 10th, 2018 by Julia</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur placeat dignissimos nulla molestiae minus! Nostrum saepe eligendi laborum hic consequuntur quaerat, molestiae, itaque numquam, magnam explicabo animi amet culpa similique.</p>
+                </div>
+
+              </div>
+
             </div>
+
+            <form class="blogComments__form">
+              <fieldset>
+                <label for="name">
+                  <span class="sr-only">Name</span>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Name"
+                  >
+                </label>
+                <label for="email">
+                  <span class="sr-only">Email</span>
+                  <input 
+                    type="text" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Email address"
+                  >
+                </label>
+              </fieldset>
+
+              <textarea 
+                name="comment" 
+                id="comment" 
+                cols="30" 
+                rows="10"
+              >Comment</textarea>
+
+              <button>Post Comment</button>
+
+            </form>
+
           </div>
-          <div>
-            <div class="blogComments__imgContainer">
-              <img src="./assets/comment-2.jpg" alt="woman with blonde hair, smiling">
-            </div>
-            <div class="blogComments__text">
-              <p>Wednesday October 10th, 2018 by Julia</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur placeat dignissimos nulla molestiae minus! Nostrum saepe eligendi laborum hic consequuntur quaerat, molestiae, itaque numquam, magnam explicabo animi amet culpa similique.</p>
-            </div>
-          </div>
-
-          <form class="blogComments__form">
-            <fieldset>
-              <label for="name">
-                <span class="sr-only">Name</span>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  placeholder="Name"
-                >
-              </label>
-              <label for="email">
-                <span class="sr-only">Email</span>
-                <input 
-                  type="text" 
-                  id="email" 
-                  name="email" 
-                  placeholder="Email address"
-                >
-              </label>
-            </fieldset>
-
-            <textarea 
-              name="comment" 
-              id="comment" 
-              cols="30" 
-              rows="10"
-            >Comment</textarea>
-
-            <button>Post Comment</button>
-
-          </form>
-
-        
         </section>
 
       </div>
