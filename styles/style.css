@@ -317,6 +317,14 @@ p {
   padding: 8px;
 }
 
+.email {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
 .navList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +405,6 @@ p {
   padding: 10px;
   border: none;
   border-bottom: solid 1px #4CEEA7;
-  background: #EFFDF3;
 }
 
 .form .form__inputName::-webkit-input-placeholder,
@@ -902,6 +909,7 @@ p {
   padding: 10px;
   margin: 0 0 40px 0;
   resize: none;
+  background: #EFFDF3;
 }
 
 .blogComments .blogForm .blogForm__button {
@@ -959,7 +967,7 @@ p {
 
 .contactMain {
   background: #EFFDF3;
-  height: 100vh;
+  height: 600px;
 }
 
 .contactMain__container {
@@ -970,6 +978,7 @@ p {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  height: 100%;
 }
 
 .contactMain__item:first-child {
@@ -983,18 +992,52 @@ p {
   width: 100%;
   position: absolute;
   left: 0;
-  top: -200px;
+  bottom: 175px;
+}
+
+.contactMain__title {
+  padding: 0 0 0 50px;
 }
 
 .contactMain__item:last-child {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .contactForm {
   padding: 10px 50px 50px 50px;
-  -webkit-box-shadow: -30px 30px 0 #FDFA69;
-          box-shadow: -30px 30px 0 #FDFA69;
+  margin: 60px 50px 0 50px;
+  -webkit-box-shadow: -30px 0 0 #FDFA69, -30px 30px 0 #FDFA69;
+          box-shadow: -30px 0 0 #FDFA69, -30px 30px 0 #FDFA69;
   background: #FAFAFA;
+}
+
+.contactForm__input {
+  background: #FAFAFA;
+}
+
+.contactInfo {
+  margin: auto auto calc(175px - 30px) auto;
+}
+
+.contactInfo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 22px;
+}
+
+.contactInfo__listItems {
+  padding: 0 25px 0 0;
+}
+
+.contactInfo__p {
+  padding: 15px 0;
 }

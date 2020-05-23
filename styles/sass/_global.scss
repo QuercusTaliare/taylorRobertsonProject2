@@ -71,6 +71,11 @@ p {
     
 }
 
+.email {
+    @include serifFont();
+    font-size: 26px;
+}
+
 .navList {
     display: flex;
     justify-content: flex-end;
@@ -82,10 +87,6 @@ p {
     line-height: 29px;
     letter-spacing: 1px;
 }
-
-// .navListItems:last-child {
-//     padding-right: 60px;
-// }
 
 .navLinks {
     display: block;
@@ -137,7 +138,7 @@ p {
       padding: 10px;
       border: none;
       border-bottom: solid 1px $borderColour;
-      background: $backgroundColour;
+    //   background: $backgroundColour;
     }
 
     .form__inputName::placeholder,

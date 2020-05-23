@@ -1,3 +1,5 @@
+
+// Header
 .contactHeader {
   background-image: url('../assets/contact-header.jpg');
   background-size: cover;
@@ -9,13 +11,15 @@
   }
 }
 
+// Main Section 
 .contactMain {
   background: $backgroundColour;
-  height: 100vh;
+  height: 600px;
 
   &__container {
     display: flex;
     flex-direction: row-reverse;
+    height: 100%;
   }
 
   &__item:first-child {
@@ -27,24 +31,56 @@
     width: 100%;
     position: absolute;
     left: 0;
-    top: -200px;
+    bottom: 175px;
+  }
+
+  &__title {
+    padding: 0 0 0 50px;
   }
 
   &__item:last-child {
     flex: 1 1 30%;
+
+    display: flex;
+    align-items: flex-end;
   }
 }
 
+// Form Section - Right
 .contactForm {
 
   padding: 10px 50px 50px 50px;
-  box-shadow: -30px 30px 0 $boxOutlineColour;
+  margin: 60px 50px 0 50px;
+  box-shadow: 
+    -30px 0 0 $boxOutlineColour, 
+    -30px 30px 0 $boxOutlineColour;
   background: $neutralColour;
 
 
-  &__inputArea {
-    // background: $backgroundColour;
+  &__input {
+    background: $neutralColour;
   }
+}
+
+// Contact Info - Left
+
+.contactInfo {
+
+  margin: auto auto calc(175px - 30px) auto;
+
+  &__list {
+    display: flex;
+    font-size: 22px;
+  }
+
+  &__listItems {
+    padding: 0 25px 0 0;
+  }
+
+  &__p {
+    padding: 15px 0;
+  }
+
 }
 
 

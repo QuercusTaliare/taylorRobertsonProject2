@@ -139,6 +139,8 @@
       padding: 10px;
       border: none;
       border-bottom: solid 1px $borderColour;
+
+      // Keep this
       background: $backgroundColour;
     }
 
@@ -152,6 +154,9 @@
       padding: 10px;
       margin: 0 0 40px 0;
       resize: none;
+      
+      // Keep this
+      background: $backgroundColour;
       
     }
 
