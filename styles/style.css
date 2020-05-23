@@ -354,6 +354,83 @@ p {
   text-align: center;
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 50px 0;
+}
+
+.form__formWrapper {
+  padding: 0 150px 0 20px;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 30px 0;
+}
+
+.form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__subItem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  width: 100%;
+}
+
+.form__subItem:last-child {
+  text-align: right;
+}
+
+.form .form__inputName,
+.form .form__inputEmail {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 1px #4CEEA7;
+  background: #EFFDF3;
+}
+
+.form .form__inputName::-webkit-input-placeholder,
+.form .form__inputEmail::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.form .form__inputName:-ms-input-placeholder,
+.form .form__inputEmail:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.form .form__inputName::-ms-input-placeholder,
+.form .form__inputEmail::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.form .form__inputName::placeholder,
+.form .form__inputEmail::placeholder {
+  opacity: 1;
+}
+
+.form .form__inputArea {
+  border: solid 1px #4CEEA7;
+  padding: 10px;
+  margin: 0 0 40px 0;
+  resize: none;
+}
+
+.form .form__button {
+  display: block;
+}
+
 .homeHeader {
   background-image: url("../assets/header-image.jpg");
   background-repeat: no-repeat;
@@ -874,4 +951,50 @@ p {
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.contactHeader__listItems:last-child {
+  margin: 0 100px 0 0;
+}
+
+.contactMain {
+  background: #EFFDF3;
+  height: 100vh;
+}
+
+.contactMain__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contactMain__item:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  position: relative;
+}
+
+.contactMain__formContainer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -200px;
+}
+
+.contactMain__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.contactForm {
+  padding: 10px 50px 50px 50px;
+  -webkit-box-shadow: -30px 30px 0 #FDFA69;
+          box-shadow: -30px 30px 0 #FDFA69;
+  background: #FAFAFA;
 }

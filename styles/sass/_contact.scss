@@ -3,4 +3,48 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+
+  &__listItems:last-child {
+    margin: 0 100px 0 0;
+  }
 }
+
+.contactMain {
+  background: $backgroundColour;
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__item:first-child {
+    flex: 1 1 70%;
+    position: relative;
+  }
+
+  &__formContainer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -200px;
+  }
+
+  &__item:last-child {
+    flex: 1 1 30%;
+  }
+}
+
+.contactForm {
+
+  padding: 10px 50px 50px 50px;
+  box-shadow: -30px 30px 0 $boxOutlineColour;
+  background: $neutralColour;
+
+
+  &__inputArea {
+    // background: $backgroundColour;
+  }
+}
+
+
