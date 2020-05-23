@@ -129,7 +129,7 @@
                 rows="10"
               >Comment</textarea>
 
-              <button class="button blogForm__item">Post Comment</button>
+              <button class="button blogForm__item blogForm__button">Post Comment</button>
 
             </form>
           </div>
@@ -140,16 +140,42 @@
       
       <!-- Left Side  -->
       <div class="blogMain__item blogMain__item--left">
-        <aside>
-          <img src="./assets/side-blog-image.jpg" alt="hand playfully tossing a camera lens into the air, with water and clouds on horizon">
-          <div>
-            <h5>About Captured</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat aut numquam. <strong>Find out more.</strong></p>
+        <aside class="blogAside">
+
+          <div class="blogAside__imgContainer">
+            <img src="./assets/side-blog-image.jpg"
+              alt="hand playfully tossing a camera lens into the air, with water and clouds on horizon">
           </div>
-          <div>
-            <h5>Recent Posts</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime animi debitis ipsum beatae commodi voluptates!</p>
+          <div class="blogAside__textContainer">
+            
+            <div class="blogAside__text blogAside__textAbout">
+              <h5 class="blogAside__title blogAside__titleAbout">About Captured</h5>
+              <p class="blogAside__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat aut numquam. <strong>Find out more.</strong></p>
+            </div>
+            
+            <div class="blogAside__text blogAside__postsText">
+
+              <h5 class="blogAside__title blogAside__postsTitle">Recent Posts</h5>
+
+              <ul class="blogAside__list">
+                <li class="blogAside__listItems">
+                  <a href="#" class="blogAside__links">Donec facilisis tortor ut</a>
+                </li>
+                <li class="blogAside__listItems">
+                  <a href="#" class="blogAside__links">Augue lacinia at viverra</a>
+                </li>
+                <li class="blogAside__listItems">
+                  <a href="#" class="blogAside__links">Semper sed sapien metus</a>
+                </li>
+                <li class="blogAside__listItems">
+                  <a href="#" class="blogAside__links">Scelerisque nec pharetra id</a>
+                </li>
+              </ul>
+
+            </div>
+
           </div>
+            
         </aside>
       </div>
     </div>

@@ -276,6 +276,10 @@ h4 {
   letter-spacing: 1px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
 img {
   width: 100%;
   display: block;
@@ -648,6 +652,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
+  position: relative;
 }
 
 .blogHeader__listItems:last-child {
@@ -820,6 +825,48 @@ p {
   padding: 10px;
   margin: 0 0 40px 0;
   resize: none;
+}
+
+.blogComments .blogForm .blogForm__button {
+  display: block;
+}
+
+.blogAside {
+  margin: 60px 0 0 0;
+  position: relative;
+}
+
+.blogAside__imgContainer {
+  position: absolute;
+  right: 10px;
+}
+
+.blogAside__textContainer {
+  background: #FAFAFA;
+  margin: 0 0 0 60px;
+  padding: 340px 70px 0 0;
+}
+
+.blogAside__text {
+  padding: 20px;
+}
+
+.blogAside__p {
+  margin: 0 0 0 5px;
+}
+
+.blogAside__listItems::before {
+  content: "\2022";
+  color: #4CEEA7;
+  display: inline-block;
+  width: 1rem;
+}
+
+.blogAside__links {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .contactHeader {
