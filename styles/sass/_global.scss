@@ -98,21 +98,16 @@ p {
 }
 
 
-.footer {
-    background: $darkColour;
-    color: $neutralColour;
-    text-align: center;
-}
+
 
 .form {
     display: flex;
     flex-direction: column;
-    // align-items: center;
     margin: 0 0 50px 0;
 
-    &__formWrapper {
-      padding: 0 150px 0 20px;
-    }
+    // &__formWrapper {
+    //   padding: 0 150px 0 20px;
+    // }
   
     &__fieldset {
       border: none;
@@ -158,4 +153,10 @@ p {
       display: block;
     }
     
+}
+
+.footer {
+    background: $darkColour;
+    color: $neutralColour;
+    text-align: center;
 }

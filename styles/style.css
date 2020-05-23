@@ -356,12 +356,6 @@ p {
   line-height: 32px;
 }
 
-.footer {
-  background: #2C2C2C;
-  color: #FAFAFA;
-  text-align: center;
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,10 +365,6 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 0 50px 0;
-}
-
-.form__formWrapper {
-  padding: 0 150px 0 20px;
 }
 
 .form__fieldset {
@@ -436,6 +426,12 @@ p {
 
 .form .form__button {
   display: block;
+}
+
+.footer {
+  background: #2C2C2C;
+  color: #FAFAFA;
+  text-align: center;
 }
 
 .homeHeader {
@@ -735,7 +731,7 @@ p {
   background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -771,9 +767,15 @@ p {
   margin: 0 40px 0 0;
 }
 
+.blogArticle__pageTitle {
+  position: relative;
+  top: -440px;
+  right: -30px;
+}
+
 .blogArticle__imgContainer {
   position: relative;
-  top: -200px;
+  top: -400px;
   right: -30px;
   -webkit-box-shadow: -30px 30px 0 #FDFA69;
           box-shadow: -30px 30px 0 #FDFA69;
@@ -788,7 +790,7 @@ p {
   border-left: solid 5px #FDFA69;
   border-bottom: solid 5px #FDFA69;
   padding: 30px 0 10px 30px;
-  margin: -200px 0 0 0;
+  margin: -400px 0 0 0;
 }
 
 .blogArticle__title {
@@ -838,82 +840,17 @@ p {
   padding: 0 0 10px 0;
 }
 
-.blogComments .blogForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 0 50px 0;
-}
-
-.blogComments .blogForm__formWrapper {
+.blogForm__formWrapper {
   padding: 0 150px 0 20px;
 }
 
-.blogComments .blogForm__fieldset {
-  border: none;
-  padding: 30px 0;
-}
-
-.blogComments .blogForm__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.blogComments .blogForm__subItem {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-  width: 100%;
-}
-
-.blogComments .blogForm__subItem:last-child {
-  text-align: right;
-}
-
-.blogComments .blogForm .blogForm__inputName,
-.blogComments .blogForm .blogForm__inputEmail {
-  width: 90%;
-  padding: 10px;
-  border: none;
-  border-bottom: solid 1px #4CEEA7;
+.blogForm__inputName,
+.blogForm__inputEmail {
   background: #EFFDF3;
 }
 
-.blogComments .blogForm .blogForm__inputName::-webkit-input-placeholder,
-.blogComments .blogForm .blogForm__inputEmail::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.blogComments .blogForm .blogForm__inputName:-ms-input-placeholder,
-.blogComments .blogForm .blogForm__inputEmail:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.blogComments .blogForm .blogForm__inputName::-ms-input-placeholder,
-.blogComments .blogForm .blogForm__inputEmail::-ms-input-placeholder {
-  opacity: 1;
-}
-
-.blogComments .blogForm .blogForm__inputName::placeholder,
-.blogComments .blogForm .blogForm__inputEmail::placeholder {
-  opacity: 1;
-}
-
-.blogComments .blogForm .blogForm__inputArea {
-  border: solid 1px #4CEEA7;
-  padding: 10px;
-  margin: 0 0 40px 0;
-  resize: none;
+.blogForm__inputArea {
   background: #EFFDF3;
-}
-
-.blogComments .blogForm .blogForm__button {
-  display: block;
 }
 
 .blogAside {
@@ -923,7 +860,8 @@ p {
 
 .blogAside__imgContainer {
   position: absolute;
-  right: 10px;
+  right: 15px;
+  top: -15px;
 }
 
 .blogAside__textContainer {

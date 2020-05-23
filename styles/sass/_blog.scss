@@ -5,7 +5,7 @@
   background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 
   &__listItems:last-child {
@@ -39,9 +39,15 @@
 
 .blogArticle {
 
+  &__pageTitle {
+    position: relative;
+    top: -440px;
+    right: -30px;
+  }
+
   &__imgContainer {
     position: relative;
-    top: -200px;
+    top: -400px;
     right: -30px;
     box-shadow: -30px 30px 0 $boxOutlineColour;
     width: calc(100% - 30px);
@@ -55,7 +61,7 @@
     border-left: solid 5px $boxOutlineColour;
     border-bottom: solid 5px $boxOutlineColour;
     padding: 30px 0 10px 30px;
-    margin: -200px 0 0 0;
+    margin: -400px 0 0 0;
   }
 
   &__title {
@@ -103,70 +109,21 @@
     line-height: 18px;
     padding: 0 0 10px 0;
   }
+}
 
+// Form 
+.blogForm__formWrapper {
+  padding: 0 150px 0 20px;
+}
 
-  .blogForm {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    margin: 0 0 50px 0;
+.blogForm__inputName,
+.blogForm__inputEmail {    
+  background: $backgroundColour;
+}
 
-    &__formWrapper {
-      padding: 0 150px 0 20px;
-    }
-  
-    &__fieldset {
-      border: none;
-      padding: 30px 0;
-    }
-
-    &__item {
-      display: flex;
-    }
-
-    &__subItem {
-      flex: 1 1 50%;
-      width: 100%;
-    }
-
-    &__subItem:last-child {
-      text-align: right;
-    }
-
-    .blogForm__inputName,
-    .blogForm__inputEmail {
-      width: 90%;
-      padding: 10px;
-      border: none;
-      border-bottom: solid 1px $borderColour;
-
-      // Keep this
-      background: $backgroundColour;
-    }
-
-    .blogForm__inputName::placeholder,
-    .blogForm__inputEmail::placeholder {
-      opacity: 1;
-    }
-
-    .blogForm__inputArea {
-      border: solid 1px $borderColour;
-      padding: 10px;
-      margin: 0 0 40px 0;
-      resize: none;
-      
-      // Keep this
-      background: $backgroundColour;
-      
-    }
-
-    .blogForm__button {
-      display: block;
-    }
-  
-  }
-
-
+.blogForm__inputArea {
+  background: $backgroundColour;
+    
 }
 
 
@@ -178,8 +135,8 @@
   
   &__imgContainer {
     position: absolute;
-    right: 10px;
-
+    right: 15px;
+    top: -15px;
   }
 
   &__textContainer {

@@ -21,18 +21,21 @@
         <li class="navListItems blogHeader__listItems"><a href="#contact" class="navLinks">Contact</a></li>
       </ul>
     </nav>
-    <h2 class="blogHeader__title">Blog</h2>
+    
 
   </header>
 
   <main class="blogMain">
     <div class="blogMain__container">
 
+      <!-- Right Side Container  -->
       <div class="blogMain__item blogMain__item--right">
 
         <!-- Blog Article  -->
         <section class="blogMain__blogArticle blogArticle">
-    
+          
+          <h2 class="blogArticle__pageTitle">Blog</h2>
+
           <div class="blogArticle__imgContainer">
             <img src="./assets/blog-post-image.jpg" alt="woman holding a camera to her eye, sitting in a field of white dandelions">
           </div>
@@ -96,25 +99,25 @@
           </div>
 
           <div class="blogForm__formWrapper">
-            <form class="blogComments__blogForm blogForm">
+            <form class="form blogComments__blogForm blogForm">
 
-              <fieldset class="blogForm__item blogForm__fieldset">
-                <label for="name" class="blogForm__subItem">
+              <fieldset class="form__item form__fieldset">
+                <label for="name" class="form__subItem">
                   <span class="sr-only">Name</span>
                   <input 
                     type="text" 
                     id="name"
-                    class="input blogForm__inputName" 
+                    class="input form__inputName blogForm__inputName" 
                     name="name" 
                     placeholder="Name"
                   >
                 </label>
-                <label for="email" class="blogForm__subItem">
+                <label for="email" class="form__subItem">
                   <span class="sr-only">Email</span>
                   <input 
                     type="text" 
                     id="email"
-                    class="input blogForm__inputEmail"
+                    class="input form__inputEmail blogForm__inputEmail"
                     name="email" 
                     placeholder="Email address"
                   >
@@ -122,14 +125,14 @@
               </fieldset>
 
               <textarea 
-                class="input blogForm__item blogForm__inputArea"
+                class="input form__item form__inputArea blogForm__inputArea"
                 name="comment" 
                 id="comment" 
                 cols="30" 
                 rows="10"
               >Comment</textarea>
 
-              <button class="button blogForm__item blogForm__button">Post Comment</button>
+              <button class="button form__item form__button">Post Comment</button>
 
             </form>
           </div>
