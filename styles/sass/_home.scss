@@ -1,43 +1,35 @@
 .homeHeader {
   background-image: url('../assets/header-image.jpg');
-  // background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  .homeHeader__list {
+  &__list {
     display: flex;
     justify-content: flex-end;
   }
 
-  .homeHeader__listItems:last-child {
+  &__listItems--mobile {
+    display: none;
+  }
+
+  &__listItems:last-child {
     padding-right: 60px;
   }
 
-  // Font Declaration 
-  .homeHeader__title {
+  &__title {
     text-align: center;
     z-index: 10;
     text-transform: uppercase;
     margin: 0 0 50px 50px;
   }
 
-  .homeHeader__imgContainer {
-    width: 40%;
-    position: absolute;
-    bottom: -140px;
-    right: 0;
-    border-top: solid 50px $boxOutlineColour;
-    border-bottom: solid 50px $boxOutlineColour;
-    border-left: solid 40px $boxOutlineColour;
-  }
-
-
 }
+
+
 
 // Section Backgrounds 
 .homeSection:nth-child(odd) {
@@ -49,26 +41,37 @@
 
 .homeAbout {
   height: 600px;
+  position: relative;
 
-  .homeAbout__wrapper {
+  &__imgContainer {
+    position: absolute;
+    width: 42%;
+    right: 0;
+    top: -500px;
+    border-top: solid 50px $boxOutlineColour;
+    border-bottom: solid 50px $boxOutlineColour;
+    border-left: solid 40px $boxOutlineColour;
+  }
+
+  &__wrapper {
     @include wrapper(1000);
     height: 100%;
   }
 
-  .homeAbout__container {
+  &__container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .homeAbout__text {
+  &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .homeAbout__p {
+  &__p {
     margin: 20px 0;
   }
 
@@ -109,7 +112,10 @@
   &__item:first-child {
     position: relative;
 
-    .homeArticles__imgContainer {
+
+  }
+
+  &__imgContainerOne {
       // height: 100%;
       width: 85%;
       position: absolute;
@@ -117,7 +123,6 @@
       top: -30px;
       box-shadow: 30px 30px 0 $boxOutlineColour;
       
-    }
   }
 
   // 1st Article
@@ -139,17 +144,16 @@
   // 2nd Image
   &__item:last-child {
     position: relative;
-    
-    .homeArticles__imgContainer {
+  
+  }
+
+  &__imgContainerTwo {
       width: 85%;
       position: absolute;
       right: 0;
       bottom: -30px;
       box-shadow: -30px 30px 0 $boxOutlineColour;
     }
-  
-  
-  }
 
 
 }

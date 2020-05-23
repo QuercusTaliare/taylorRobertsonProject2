@@ -14,25 +14,49 @@
   <header class="homeHeader">
 
     <nav class="homeHeader__nav">
+
       <ul class="homeHeader__list">
-        <li class="navListItems homeHeader__listItems"><a href="#home" class="navLinks homeHeader__links">Home</a></li>
-        <li class="navListItems homeHeader__listItems"><a href="#about" class="navLinks homeHeader__links">About</a></li>
-        <li class="navListItems homeHeader__listItems"><a href="#blog" class="navLinks homeHeader__links">Blog</a></li>
-        <li class="navListItems homeHeader__listItems"><a href="#contact" class="navLinks homeHeader__links">Contact</a></li>
+
+        <li class="navListItems homeHeader__listItems homeHeader__listItems--mobile">
+          <a href="">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+        <li class="navListItems homeHeader__listItems homeHeader__listItems--desktop">
+          <a href="#home" class="navLinks homeHeader__links">Home</a>
+        </li>
+        <li class="navListItems homeHeader__listItems homeHeader__listItems--desktop">
+          <a href="#about" class="navLinks homeHeader__links">About</a>
+        </li>
+        <li class="navListItems homeHeader__listItems homeHeader__listItems--desktop">
+          <a href="#blog" class="navLinks homeHeader__links">Blog</a>
+        </li>
+        <li class="navListItems homeHeader__listItems homeHeader__listItems--desktop">
+          <a href="#contact" class="navLinks homeHeader__links">Contact</a>
+        </li>
+        
       </ul>
+
     </nav>
     <h1 class="homeHeader__title">Captured</h1>
+
     <!-- Image with border  -->
-    <div class="homeHeader__imgContainer">
+    <!-- <div class="homeHeader__imgContainer">
       <img src="./assets/header-box-image.jpg" alt="looking down upon a camera lens">
-    </div>
+    </div> -->
 
   </header>
 
   <main>
 
+
+
     <!-- About  -->
     <section class="homeSection homeAbout">
+
+      <div class="homeHeader__imgContainer homeAbout__imgContainer">
+        <img src="./assets/header-box-image.jpg" alt="looking down upon a camera lens" class="homeAbout__img">
+      </div>
 
       <div class="homeAbout__wrapper">
 
@@ -58,7 +82,7 @@
       
       <!-- 1st - Image -->
       <div class="homeArticles__item homeArticle__item--img">
-        <div class="homeArticles__imgContainer">
+        <div class="homeArticles__imgContainerOne">
           <img src="./assets/left-image.jpg" alt="sideview of a camera with a large lens on a stand, with a cloudy sky in the background">
         </div>
       </div>
@@ -92,7 +116,7 @@
 
       <!-- 2nd - Image -->
       <div class="homeArticles__item homeArticles__item--img">
-        <div class="homeArticles__imgContainer">
+        <div class="homeArticles__imgContainerTwo">
           <img src="./assets/right-image.jpg" alt="hands holding a Canon camera, lens tipped downwards">
         </div>
       </div>
