@@ -910,7 +910,7 @@ p {
 .contactHeader {
   background-image: url("../assets/contact-header.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   height: 100vh;
   position: relative;
 }
@@ -922,7 +922,7 @@ p {
 .contactHeader__title {
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 43%;
 }
 
 .contactMain {
@@ -943,8 +943,8 @@ p {
 
 .contactMain__item:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 70%;
-          flex: 1 1 70%;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
   position: relative;
 }
 
@@ -957,8 +957,8 @@ p {
 
 .contactMain__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 30%;
-          flex: 1 1 30%;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1310,5 +1310,87 @@ p {
   .blogAside__links {
     line-height: 26px;
     letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 1415px) {
+  .contactHeader {
+    background-position: left -300px center;
+  }
+  .contactHeader__title {
+    top: 0;
+    left: 0;
+    font-size: 5rem;
+  }
+  .contactMain {
+    height: auto;
+  }
+  .contactMain__formContainer {
+    position: static;
+    bottom: 0;
+  }
+  .contactForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: solid 5px #FDFA69;
+    margin-bottom: 50px;
+  }
+  .contactInfo {
+    margin: auto;
+  }
+}
+
+@media (max-width: 975px) {
+  .contactHeader__listItems--desktop {
+    display: none;
+  }
+  .contactHeader__listItems--mobile {
+    display: inline-block;
+    font-size: 4rem;
+    padding: 20px;
+  }
+  .contactHeader__title {
+    top: 60px;
+    font-size: 4rem;
+  }
+  .contactMain__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMain__item:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactForm {
+    margin: 60px 0 20px 0;
+  }
+  .contactForm__input {
+    font-size: 1.6rem;
+  }
+  .contactForm__inputArea {
+    font-size: 1.6rem;
+  }
+  .contactInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 20px 0;
+  }
+  .contactInfo__p {
+    margin: 0 20px;
+  }
+  .contactInfo__address {
+    text-align: center;
   }
 }
