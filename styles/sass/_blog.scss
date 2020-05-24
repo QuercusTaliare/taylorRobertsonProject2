@@ -121,12 +121,31 @@
 .blogForm__inputName,
 .blogForm__inputEmail {    
   background: $backgroundColour;
+
+  
 }
+
+// .blogForm__inputName:hover,
+// .blogForm__inputName:focus,
+// .blogForm__inputEmail:hover,
+// .blogForm__inputEmail:focus {
+//   border-bottom: solid 1px rgba($borderColour, 0.5);
+// }
 
 .blogForm__inputArea {
   background: $backgroundColour;
-    
 }
+
+// .blogForm__inputArea:hover,
+// .blogForm__inputArea:focus {
+//   border: solid 1px rgba($borderColour, 0.5);
+// }
+
+// .blogForm__button:hover,
+// .blogForm__button:focus {
+//   opacity: 0.5;
+//   cursor: pointer;
+// }
 
 
 // ----------------  Aside - Left Side 
@@ -159,6 +178,23 @@
     margin: 0 0 0 5px;
   }
 
+  &__links--strong {
+    font-weight: bold;
+
+    :hover,
+    :focus {
+      opacity: 0.5;
+    }
+  }
+
+  &__listItems {
+
+    :hover,
+    :focus {
+      opacity: 0.5;
+    }
+  }
+
   // https://www.w3schools.com/howto/howto_css_bullet_color.asp
   // This resource helped me change the colour of the bullets
   &__listItems::before {
@@ -170,7 +206,11 @@
 
   &__links {
     @include sansSerifFont();
+
   }
+
+  
+
 
 
 }

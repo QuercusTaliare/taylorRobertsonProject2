@@ -100,7 +100,8 @@
     width: 80%;
   }
 
-  &__p {
+  &__pOne,
+  &__pTwo {
     margin: 20px 0;
   }
 
@@ -188,12 +189,6 @@
     background: $buttonColour;
     border-radius: 50%;
     padding: 10px;
-  }
-
-  &__icons:hover,
-  &__icons:focus {
-    opacity: 0.5;
-  
   }
 
   &__titles:hover,

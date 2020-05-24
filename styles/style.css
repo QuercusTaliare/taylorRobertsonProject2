@@ -349,23 +349,18 @@ p {
   letter-spacing: 1px;
 }
 
-.navListItems :hover,
-.navListItems :focus {
-  opacity: 0.5;
-}
-
 .navLinks {
   display: block;
-  padding: 25px;
+  padding: 0;
+  margin: 25px;
+}
+
+.navLinks:hover {
+  border-bottom: solid 1px #4CEEA7;
 }
 
 .navListItems__mobile {
   display: none;
-}
-
-.icons :hover,
-.icons :focus {
-  color: red;
 }
 
 .input {
@@ -408,43 +403,73 @@ p {
   text-align: right;
 }
 
-.form .form__inputName,
-.form .form__inputEmail {
+.form__inputName, .form__inputEmail {
   width: 90%;
   padding: 10px;
   border: none;
   border-bottom: solid 1px #4CEEA7;
 }
 
-.form .form__inputName::-webkit-input-placeholder,
-.form .form__inputEmail::-webkit-input-placeholder {
+.form__inputName::-webkit-input-placeholder, .form__inputEmail::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.form .form__inputName:-ms-input-placeholder,
-.form .form__inputEmail:-ms-input-placeholder {
+.form__inputName:-ms-input-placeholder, .form__inputEmail:-ms-input-placeholder {
   opacity: 1;
 }
 
-.form .form__inputName::-ms-input-placeholder,
-.form .form__inputEmail::-ms-input-placeholder {
+.form__inputName::-ms-input-placeholder, .form__inputEmail::-ms-input-placeholder {
   opacity: 1;
 }
 
-.form .form__inputName::placeholder,
-.form .form__inputEmail::placeholder {
+.form__inputName::placeholder, .form__inputEmail::placeholder {
   opacity: 1;
 }
 
-.form .form__inputArea {
+.form__inputName:hover, .form__inputName:focus, .form__inputEmail:hover, .form__inputEmail:focus {
+  border-bottom: solid 1px rgba(76, 238, 167, 0.5);
+}
+
+.form__inputName:hover::-webkit-input-placeholder, .form__inputName:focus::-webkit-input-placeholder, .form__inputEmail:hover::-webkit-input-placeholder, .form__inputEmail:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.form__inputName:hover:-ms-input-placeholder, .form__inputName:focus:-ms-input-placeholder, .form__inputEmail:hover:-ms-input-placeholder, .form__inputEmail:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form__inputName:hover::-ms-input-placeholder, .form__inputName:focus::-ms-input-placeholder, .form__inputEmail:hover::-ms-input-placeholder, .form__inputEmail:focus::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.form__inputName:hover::placeholder, .form__inputName:focus::placeholder, .form__inputEmail:hover::placeholder, .form__inputEmail:focus::placeholder {
+  opacity: 0.5;
+}
+
+.form__inputArea {
   border: solid 1px #4CEEA7;
   padding: 10px;
   margin: 0 0 40px 0;
   resize: none;
 }
 
-.form .form__button {
+.form__inputArea:hover, .form__inputArea:focus {
+  border: solid 1px rgba(76, 238, 167, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form__button {
   display: block;
+}
+
+.form__button:hover, .form__button:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.icons:hover, .icons:focus {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .footer {
@@ -578,7 +603,7 @@ p {
   width: 80%;
 }
 
-.homeArticles__p {
+.homeArticles__pOne, .homeArticles__pTwo {
   margin: 20px 0;
 }
 
@@ -653,10 +678,6 @@ p {
   background: #4CEEA7;
   border-radius: 50%;
   padding: 10px;
-}
-
-.homeMainNav__icons:hover, .homeMainNav__icons:focus {
-  opacity: 0.5;
 }
 
 .homeMainNav__titles:hover, .homeMainNav__titles:focus {
@@ -914,6 +935,20 @@ p {
 
 .blogAside__p {
   margin: 0 0 0 5px;
+}
+
+.blogAside__links--strong {
+  font-weight: bold;
+}
+
+.blogAside__links--strong :hover,
+.blogAside__links--strong :focus {
+  opacity: 0.5;
+}
+
+.blogAside__listItems :hover,
+.blogAside__listItems :focus {
+  opacity: 0.5;
 }
 
 .blogAside__listItems::before {
