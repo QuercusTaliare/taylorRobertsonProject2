@@ -912,10 +912,17 @@ p {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
 }
 
 .contactHeader__listItems:last-child {
   margin: 0 100px 0 0;
+}
+
+.contactHeader__title {
+  position: absolute;
+  top: 50%;
+  left: 35%;
 }
 
 .contactMain {
@@ -946,10 +953,6 @@ p {
   position: absolute;
   left: 0;
   bottom: 175px;
-}
-
-.contactMain__title {
-  padding: 0 0 0 50px;
 }
 
 .contactMain__item:last-child {

@@ -13,14 +13,28 @@
 
 <body>
   <header class="contactHeader">
-    <nav>
-      <ul class="navList contactHeader__list">
-        <li class="navListItems contactHeader__listItems"><a href="#home" class="navLinks">Home</a></li>
-        <li class="navListItems contactHeader__listItems"><a href="#about" class="navLinks">About</a></li>
-        <li class="navListItems contactHeader__listItems"><a href="#blog" class="navLinks">Blog</a></li>
-        <li class="navListItems contactHeader__listItems"><a href="#contact" class="navLinks">Contact</a></li>
-      </ul>
-    </nav>
+  
+    <ul class="navList contactHeader__list">
+      <li class="navListItems navListItems__mobile contactHeader__listItems contactHeader__listItems--mobile">
+        <a href="#">
+          <i class="fas fa-bars "></i>
+        </a>
+      </li>
+      <li class="navListItems contactHeader__listItems contactHeader__listItems--desktop">
+        <a href="#home" class="navLinks">Home</a>
+      </li>
+      <li class="navListItems contactHeader__listItems contactHeader__listItems--desktop">
+        <a href="#about" class="navLinks">About</a>
+      </li>
+      <li class="navListItems contactHeader__listItems contactHeader__listItems--desktop">
+        <a href="#blog" class="navLinks">Blog</a>
+      </li>
+      <li class="navListItems contactHeader__listItems contactHeader__listItems--desktop">
+        <a href="#contact" class="navLinks">Contact</a>
+      </li>
+    </ul>
+
+    <h2 class="contactHeader__title">Get In Touch</h2>
     
   </header>
 
@@ -33,8 +47,6 @@
         <!-- Right -->
         <section class="contactMain__formContainer">
 
-          <h2 class="contactMain__title">Get In Touch</h2>
-          
           <form class="form contactForm">
             <fieldset class="form__item form__fieldset">
               <label for="name" class="form__subItem">

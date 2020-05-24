@@ -5,9 +5,16 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
 
   &__listItems:last-child {
     margin: 0 100px 0 0;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 35%;
   }
 }
 
@@ -32,10 +39,6 @@
     position: absolute;
     left: 0;
     bottom: 175px;
-  }
-
-  &__title {
-    padding: 0 0 0 50px;
   }
 
   &__item:last-child {
