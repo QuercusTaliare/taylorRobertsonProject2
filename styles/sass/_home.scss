@@ -132,13 +132,12 @@
 
   // 2nd Article 
   &__text--two {
-    
     text-align: right;
     
-    .homeArticles__p {
-      text-align: left;
-    }
+  }
 
+  &__pTwo {
+      text-align: left;
   }
 
   // 2nd Image

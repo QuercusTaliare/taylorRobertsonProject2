@@ -584,7 +584,7 @@ p {
   text-align: right;
 }
 
-.homeArticles__text--two .homeArticles__p {
+.homeArticles__pTwo {
   text-align: left;
 }
 
@@ -1061,6 +1061,7 @@ p {
   p {
     line-height: 26px;
     letter-spacing: -1px;
+    text-align: center;
   }
   .homeHeader__listItems--desktop {
     display: none;
@@ -1095,6 +1096,9 @@ p {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  .homeArticles__pTwo {
+    text-align: center;
   }
   .homeMainNav__list {
     padding: 20px 0;

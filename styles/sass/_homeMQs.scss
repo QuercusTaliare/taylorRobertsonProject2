@@ -69,7 +69,6 @@
       text-align: center;
     }
 
-
   }
 
 
@@ -80,6 +79,7 @@
   p {
     line-height: 26px;
     letter-spacing: -1px;
+    text-align: center;
   }
 
 
@@ -124,6 +124,10 @@
 
     &__item:nth-child(3) {
       order: 4;
+    }
+
+    &__pTwo {
+      text-align: center;
     }
 
   }
