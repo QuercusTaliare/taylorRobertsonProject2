@@ -14,17 +14,23 @@
 
 @media (max-width: 1150px) {
   
-  h3 {
+  .home {
+
+    h3 {
     font-size: 3.6rem;
   }
 
-  h4 {
-    font-size: 2.6rem;
+    h4 {
+      font-size: 2.6rem;
+    }
+    
+    p {
+      font-size: 1.6rem;
+    }
+
   }
+
   
-  p {
-    font-size: 1.6rem;
-  }
 
 
   .homeAbout {
@@ -76,7 +82,7 @@
 
 @media (max-width: 850px) {
   
-  p {
+  .home p {
     line-height: 26px;
     letter-spacing: -1px;
     text-align: center;

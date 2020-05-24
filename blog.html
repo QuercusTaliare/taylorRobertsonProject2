@@ -10,17 +10,32 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body class="blog">
   <header class="blogHeader">
     
     <nav>
       <ul class="navList blogHeader__list">
-        <li class="navListItems blogHeader__listItems"><a href="#home" class="navLinks">Home</a></li>
-        <li class="navListItems blogHeader__listItems"><a href="#about" class="navLinks">About</a></li>
-        <li class="navListItems blogHeader__listItems"><a href="#blog" class="navLinks">Blog</a></li>
-        <li class="navListItems blogHeader__listItems"><a href="#contact" class="navLinks">Contact</a></li>
+        <li class="navListItems navListItems__mobile homeHeader__listItems homeHeader__listItems--mobile">
+          <a href="">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+        <li class="navListItems blogHeader__listItems">
+          <a href="#home" class="navLinks">Home</a>
+        </li>
+        <li class="navListItems blogHeader__listItems">
+          <a href="#about" class="navLinks">About</a>
+        </li>
+        <li class="navListItems blogHeader__listItems">
+          <a href="#blog" class="navLinks">Blog</a>
+        </li>
+        <li class="navListItems blogHeader__listItems">
+          <a href="#contact" class="navLinks">Contact</a>
+        </li>
       </ul>
     </nav>
+
+    <h2 class="blogHeader__title">Blog</h2>
     
 
   </header>
@@ -33,8 +48,6 @@
 
         <!-- Blog Article  -->
         <section class="blogMain__blogArticle blogArticle">
-          
-          <h2 class="blogArticle__pageTitle">Blog</h2>
 
           <div class="blogArticle__imgContainer">
             <img src="./assets/blog-post-image.jpg" alt="woman holding a camera to her eye, sitting in a field of white dandelions">
@@ -98,7 +111,7 @@
           
           </div>
 
-          <div class="blogForm__formWrapper">
+          <div class="blogForm__wrapper">
             <form class="form blogComments__blogForm blogForm">
 
               <fieldset class="form__item form__fieldset">

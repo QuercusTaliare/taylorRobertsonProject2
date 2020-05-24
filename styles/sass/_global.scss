@@ -76,6 +76,8 @@ p {
     font-size: 26px;
 }
 
+// NAVIGATION 
+
 .navList {
     display: flex;
     justify-content: flex-end;
@@ -93,12 +95,16 @@ p {
     padding: 25px;
 }
 
+.navListItems__mobile {
+    display: none;
+  }
+
+
+// FORM 
+
 .input {
     @include sansSerifFont;
 }
-
-
-
 
 .form {
     display: flex;
