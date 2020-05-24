@@ -317,6 +317,11 @@ p {
   padding: 8px;
 }
 
+.button :hover,
+.button :focus {
+  opacity: 0.5;
+}
+
 .email {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
@@ -344,6 +349,11 @@ p {
   letter-spacing: 1px;
 }
 
+.navListItems :hover,
+.navListItems :focus {
+  opacity: 0.5;
+}
+
 .navLinks {
   display: block;
   padding: 25px;
@@ -351,6 +361,11 @@ p {
 
 .navListItems__mobile {
   display: none;
+}
+
+.icons :hover,
+.icons :focus {
+  color: red;
 }
 
 .input {
@@ -638,6 +653,14 @@ p {
   background: #4CEEA7;
   border-radius: 50%;
   padding: 10px;
+}
+
+.homeMainNav__icons:hover, .homeMainNav__icons:focus {
+  opacity: 0.5;
+}
+
+.homeMainNav__titles:hover, .homeMainNav__titles:focus {
+  opacity: 0.5;
 }
 
 .homeBanner {

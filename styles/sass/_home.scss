@@ -190,8 +190,15 @@
     padding: 10px;
   }
 
-  &__text {
-    // flex-direction: column;
+  &__icons:hover,
+  &__icons:focus {
+    opacity: 0.5;
+  
+  }
+
+  &__titles:hover,
+  &__titles:focus {
+    opacity: 0.5;
   }
 
 }

@@ -68,6 +68,11 @@ p {
     background: $buttonColour;
     border: none;
     padding: 8px;
+
+    :hover,
+    :focus {
+        opacity: 0.5;
+    }
     
 }
 
@@ -88,17 +93,31 @@ p {
     font-size: 20px;
     line-height: 29px;
     letter-spacing: 1px;
+
+    :hover,
+    :focus {
+        opacity: 0.5;
+    }
 }
 
 .navLinks {
     display: block;
     padding: 25px;
+
+    
 }
 
 .navListItems__mobile {
     display: none;
-  }
+}
 
+.icons {
+
+    :hover,
+    :focus {
+        color: red;
+    }
+}
 
 // FORM 
 
