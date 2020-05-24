@@ -42,6 +42,7 @@
 
     &__text {
       padding: 50px 0;
+      text-align: center;
     }
   }
 
@@ -75,6 +76,13 @@
 }
 
 @media (max-width: 850px) {
+  
+  p {
+    line-height: 26px;
+    letter-spacing: -1px;
+  }
+
+
   .homeHeader {
 
     &__listItems--desktop {
@@ -85,6 +93,21 @@
       display: inline-block;
       font-size: 4rem;
       padding: 20px;
+    }
+
+    &__title {
+      font-size: 5.5rem;
+    }
+  }
+
+  .homeAbout {
+
+    &__imgContainer {
+      width: 50%;
+    }
+
+    &__text {
+      padding: 30px;
     }
   }
 
@@ -102,6 +125,59 @@
     &__item:nth-child(3) {
       order: 4;
     }
+
+  }
+
+  .homeMainNav {
+
+    &__list {
+      padding: 20px 0;
+    }
+
+    &__listItems {
+      flex: 1 0 50%;
+      margin: 10px;
+
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__iconContainer {
+      margin: 0 0 0 0;
+    }
+
+  }
+
+  .homeBanner {
+    height: 40vh;
+  }
+
+  .homeFeatured {
+
+    &__contentContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    &__itemImg {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 20px 0;
+    }
+
+    &__imgContainer {
+      width: 50%;
+      box-shadow: none;
+      border: solid 10px $boxOutlineColour;
+    }
+
+    &__text {
+      align-items: center;
+    }
+
 
   }
 

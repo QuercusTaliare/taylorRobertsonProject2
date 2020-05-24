@@ -1,7 +1,7 @@
 .homeHeader {
   background-image: url('../assets/header-image.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -182,7 +182,7 @@
   }
 
   &__listItems:nth-child(odd) {
-    margin: 0 10px 0 0;
+    margin-right: 10px;
   }
 
   &__iconContainer {
@@ -223,7 +223,7 @@
     padding: 80px 0 calc(30px + 60px) 0;
   }
 
-  &__item--img {
+  &__itemImg {
     flex: 1 1 30%;
   }
 
@@ -232,7 +232,7 @@
     box-shadow: 30px 30px 0 $boxOutlineColour;
   }
 
-  &__item--text {
+  &__itemText {
     flex: 1 1 70%;
     height: 328px;
   }
@@ -260,19 +260,25 @@
   }
 
   &__contentContainer {
-    height: 500px;
+    // height: 500px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
 
   }
 
   &__item {
     flex: 1 1 auto;
+
+    display: flex;
+    justify-content: center;
+    // width: 300px;
   }
 
   &__imgContainer {
     text-align: center;
-    width: 80%;
+    max-width: 300px;
+    margin: 0 5px 20px 5px;
   }
 }
