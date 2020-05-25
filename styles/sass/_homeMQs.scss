@@ -30,9 +30,6 @@
 
   }
 
-  
-
-
   .homeAbout {
     height: auto;
     display: flex;
@@ -88,7 +85,6 @@
     text-align: center;
   }
 
-
   .homeHeader {
 
     &__listItems--desktop {
@@ -118,21 +114,19 @@
   }
 
   .homeArticles {
-    // flex-direction: column;
     justify-content: center;
 
     &__item {
       flex: 0 1 auto;
       height: auto;
       margin: 10px 0;
-
     }
 
     &__item:nth-child(3) {
       order: 4;
     }
 
-    &__pTwo {
+    &__p--two {
       text-align: center;
     }
 

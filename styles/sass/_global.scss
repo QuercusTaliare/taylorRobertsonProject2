@@ -59,21 +59,18 @@ p {
     @include sansSerifFont();
 }
 
-.wrapper {
-    @include wrapper(1200);
-}
-
 .button {
     @include serifFont();
     background: $buttonColour;
     border: none;
     padding: 8px;
-
-    :hover,
-    :focus {
+    transition: all 0.2s ease-in 0.1s;
+    
+    &:hover,
+    &:focus {
         opacity: 0.5;
     }
-    
+
 }
 
 .email {
@@ -83,32 +80,37 @@ p {
 
 // NAVIGATION 
 
-.navList {
-    display: flex;
-    justify-content: flex-end;
-}
+.nav {
 
-.navListItems {
-    @include serifFont();
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 1px;
-
-}
-
-.navLinks {
-    display: block;
-    padding: 0;
-    margin: 25px;
-
-    &:hover {
-        border-bottom: solid 1px $borderColour;
+    &__list {
+        display: flex;
+        justify-content: flex-end;
     }
- 
-}
 
-.navListItems__mobile {
-    display: none;
+    &__listItems {
+        @include serifFont();
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 1px;
+
+        &--mobile {
+            display: none;
+        }
+
+    }
+
+    &__links {
+        display: block;
+        padding: 0;
+        margin: 25px;
+        transition: all 0s linear 0.2s;
+
+        &:hover {
+            border-bottom: solid 2px $borderColour;
+        }
+    
+    }
+
 }
 
 
@@ -156,6 +158,8 @@ p {
       &:hover,
       &:focus {
           border-bottom: solid 1px rgba($borderColour, 0.5);
+          transition: all 2s;
+          
           &::placeholder {
               opacity: 0.5;
           }
@@ -190,6 +194,8 @@ p {
 }
 
 .icons {
+    transition: all 0.2s linear 0.1s;
+
     &:hover,
     &:focus {
         opacity: 0.5;
