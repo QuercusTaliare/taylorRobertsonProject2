@@ -251,7 +251,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -295,7 +295,7 @@ a {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -308,7 +308,7 @@ p {
 }
 
 .button {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -323,7 +323,7 @@ p {
 }
 
 .email {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -340,7 +340,7 @@ p {
 }
 
 .navListItems {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -364,7 +364,7 @@ p {
 }
 
 .input {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -959,7 +959,7 @@ p {
 }
 
 .blogAside__links {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;

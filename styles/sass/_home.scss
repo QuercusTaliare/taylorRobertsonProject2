@@ -1,3 +1,4 @@
+// Header
 .homeHeader {
   background-image: url('../assets/header-image.jpg');
   background-repeat: no-repeat;
@@ -25,16 +26,12 @@
 
 }
 
-
-
 // Section Backgrounds 
 .homeSection:nth-child(odd) {
   background: $backgroundColour;
 }
 
 // About Section 
-
-
 .homeAbout {
   height: 600px;
   position: relative;
@@ -73,8 +70,7 @@
 
 }
 
-// ------------- Articles Section -------------------
-
+// Articles Section
 .homeArticles {
   // height: 838px;
   display: flex;
@@ -113,18 +109,12 @@
   }
 
   &__imgContainerOne {
-      // height: 100%;
       width: 85%;
       position: absolute;
       left: 0;
       top: -30px;
       box-shadow: 30px 30px 0 $boxOutlineColour;
       
-  }
-
-  // 1st Article
-  &__text--one {
-    // text-align: left;
   }
 
   // 2nd Article 
@@ -154,8 +144,7 @@
 
 }
 
-// ---------------------  Navigation Section 
-
+// Navigation Section 
 .homeMainNav {
 
   .mainWrapper {
@@ -198,7 +187,7 @@
 
 }
 
-// --------------------- Banner Section 
+// Banner Section 
 .homeBanner {
   background-image: url('../assets/banner.jpg');
   background-position: center;
@@ -208,7 +197,7 @@
 
 }
 
-// --------------------- Featured Section
+// Featured Section
 .homeFeatured {
 
   &__wrapper {
@@ -248,8 +237,7 @@
 
 }
 
-// -------------------- Gallery Section
-
+// Gallery Section
 .homeGallery {
 
   &__wrapper {
@@ -257,7 +245,6 @@
   }
 
   &__contentContainer {
-    // height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -270,7 +257,6 @@
 
     display: flex;
     justify-content: center;
-    // width: 300px;
   }
 
   &__imgContainer {

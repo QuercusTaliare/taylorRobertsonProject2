@@ -4,21 +4,18 @@ $boxOutlineColour: #FDFA69;
 $backgroundColour: #EFFDF3;
 $neutralColour: #FAFAFA;
 $darkColour: #2C2C2C;
-
-    // font-family: 'Playfair Display', serif;
-
-    // font-family: 'Roboto', sans-serif;
+$serif: 'Playfair Display', serif;
+$sansSerif: 'Roboto', sans-serif;
 
 @mixin serifFont() {
-    font-family: 'Playfair Display', serif;
-    // font-size: $size * 1px;
+    font-family: $serif;
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
 }
 
 @mixin sansSerifFont() {
-    font-family: 'Roboto', sans-serif;
+    font-family: $sansSerif;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
